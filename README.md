@@ -42,8 +42,9 @@ output "aws_out" {
 
 # Supported variables
 
+
 | Name | Description |Default|Required|
-|------|-------------|---|True/False|
+|------|-------------|-------|--------|
 |vpc_id|your vpc_id||True|
 |cluster_name|your clustername||True|
 |worker-instance-type|worker node instance type|c5.large|False|
@@ -56,3 +57,4 @@ output "aws_out" {
 |worker-asg-min|worker instance min num|2|False|
 |worker-vpc-zone-identifiers|Subnets Where to place the workerNode||True|
 |cluster-node-sg-ids|security groups you want to grant to the worker node||False|
+
