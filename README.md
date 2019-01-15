@@ -50,7 +50,7 @@ output "aws_out" {
 |worker-instance-type|worker node instance type|c5.large|False|
 |master-subnet-ids|Subnets Where to place the master||True|
 |allow-access-master-ips|ip list for allow access masterNode||False|
-|eks-optimized-ami-id||ami-063650732b3e8b38c|False|
+|eks-optimized-ami-id|please see https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html|ami-063650732b3e8b38c|False|
 |region|aws region|ap-northeast-1|False|
 |worker-asg-desired|worker instance desired num|2|False|
 |worker-asg-max|worker instance max num|2|False|
