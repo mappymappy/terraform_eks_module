@@ -42,17 +42,17 @@ output "aws_out" {
 
 # Supported variables
 
-| Name | Description |Required|
-|------|-------------|True/False|
-|vpc_id|your vpc_id|True|
-|cluster_name|your clustername|True|
-|worker-instance-type|default:c5.large|False|
-|master-subnet-ids||True|
-|allow-access-master-ips|ip list for allow access masterNode|True|
-|eks-optimized-ami-id|default ami is ap-north-east1`s|False|
-|region|default:ap-northeast-1|False|
-|worker-asg-desired|default:2|False|
-|worker-asg-max|default:2|False|
-|worker-asg-min|default:2|False|
-|worker-vpc-zone-identifiers||True|
-|cluster-node-sg-ids||True|
+| Name | Description |Default|Required|
+|------|-------------|---|True/False|
+|vpc_id|your vpc_id||True|
+|cluster_name|your clustername||True|
+|worker-instance-type|worker node instance type|c5.large|False|
+|master-subnet-ids|Subnets Where to place the master||True|
+|allow-access-master-ips|ip list for allow access masterNode||False|
+|eks-optimized-ami-id||ami-063650732b3e8b38c|False|
+|region|aws region|ap-northeast-1|False|
+|worker-asg-desired|worker instance desired num|2|False|
+|worker-asg-max|worker instance max num|2|False|
+|worker-asg-min|worker instance min num|2|False|
+|worker-vpc-zone-identifiers|Subnets Where to place the workerNode||True|
+|cluster-node-sg-ids|security groups you want to grant to the worker node||False|
